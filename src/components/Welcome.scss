@@ -1,0 +1,10 @@
+.welcomeSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    img {
+        border-radius: 50%;
+        height: 50svh;
+    }
+}
