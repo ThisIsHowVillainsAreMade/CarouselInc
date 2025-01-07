@@ -1,3 +1,80 @@
+// .container {
+//     width: 100%;
+//     height: 100vh;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background-color: black;
+//     position: relative; 
+//   }
+
+//   @media (max-width: 768px) {
+//     .container {display: none}
+//    };
+  
+//   .title {
+//     z-index: 3;
+//     color: white;
+//     position: absolute;
+//     top: 30%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     font-size: 300%;
+//     text-shadow: 
+//       0 0 5px black, 
+//       0 0 10px black, 
+//       0 0 30px white; 
+//   }
+  
+//   .line {
+//     width: 5px;
+//     height: 100%;
+//     background: linear-gradient(to top, var(--subprimary-color), black, var(--subtri-color), black);
+//   }
+  
+//   .line1 {
+//     animation: animation1 6s ease-in-out infinite alternate;
+//   }
+  
+//   .line2 {
+//     animation: animation2 6s ease-in-out infinite alternate;
+//   }
+  
+//   @keyframes animation1 {
+//     0% {
+//       transform: rotate(0deg);
+//     }
+//     45% {
+//       transform: rotate(30deg);
+//     }
+//     50% {
+//       transform: rotate(45deg);
+//     }
+//     55% {
+//       transform: rotate(60deg);
+//     }
+//     100% {
+//       transform: rotate(0deg);
+//     }
+//   }
+  
+//   @keyframes animation2 {
+//     0% {
+//       transform: rotate(0deg);
+//     }
+//     45% {
+//       transform: rotate(-30deg);
+//     }
+//     50% {
+//       transform: rotate(-45deg);
+//     }
+//     55% {
+//       transform: rotate(-60deg);
+//     }
+//     100% {
+//       transform: rotate(0deg);
+//     }
+//   }
 .container {
     width: 100%;
     height: 100vh;
@@ -5,25 +82,27 @@
     justify-content: center;
     align-items: center;
     background-color: black;
-    position: relative; 
+    position: relative;
   }
-
+  
   @media (max-width: 768px) {
-    .container {display: none}
-   };
+    .container {
+      display: none;
+    }
+  }
   
   .title {
     z-index: 3;
     color: white;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 300%;
+    position: absolute; /* Nécessaire pour utiliser translate */
+    top: 50%; /* Centre vertical */
+    left: 50%; /* Centre horizontal */
+    transform: translate(-50%, -50%); /* Ajuste le centrage parfait */
+    font-size: 3rem; /* Taille du texte */
     text-shadow: 
       0 0 5px black, 
       0 0 10px black, 
-      0 0 30px white; 
+      0 0 30px white; /* Ajoute un effet lumineux */
   }
   
   .line {
@@ -75,3 +154,4 @@
       transform: rotate(0deg);
     }
   }
+  
