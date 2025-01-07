@@ -7,6 +7,10 @@
     background-color: black;
     position: relative; 
   }
+
+  @media (max-width: 768px) {
+    .container {display: none}
+   };
   
   .title {
     z-index: 3;
