@@ -1,4 +1,3 @@
-
 .navbarSection {
   top: 0;
   width: 100%;
@@ -18,17 +17,38 @@
       align-items: center;
       gap: 2rem;
 
-      .logo {
-        display: flex;
-        align-items: center;
+      .logo img.spinningLogo {
+        height: 50px;
+        width: auto;
+        object-fit: contain;
+        animation: spinLogo 5s linear infinite, shadowPulse 2s ease-in-out infinite;
+      }
 
-        img.spinningLogo {
-          height: 50px;
-          width: auto;
-          object-fit: contain;
-          animation: spinLogo 5s linear infinite, shadowPulse 2s ease-in-out infinite;
+      @keyframes spinLogo {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
         }
       }
+      
+      @keyframes shadowPulse {
+        0% {
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+        50% {
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        }
+        100% {
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+      }
+      
+      .spinningLogo {
+        animation: spinLogo 3s linear infinite, shadowPulse 2s ease-in-out infinite;
+      }
+      
 
       p {
         font-size: 1.2rem;
@@ -57,26 +77,91 @@
         }
       }
     }
-  }
-}
 
-@keyframes spinLogo {
-  from {
-    transform: rotate(0deg);
+    .hamburgerMenu {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
-@keyframes shadowPulse {
-  from {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
-  50% {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-  }
-  to {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
+  @media (max-width: 768px) {
+    .navbarContainer {
+      .navbarMenu {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: var(--primary-color);
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        border-radius: 8px;
+
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+
+        li {
+          margin-bottom: 10px;
+
+          a {
+            padding: 10px;
+            font-size: 18px;
+          }
+        }
+      }
+
+      .navbarMenu.open {
+        max-height: 300px;
+        opacity: 1;
+      }
+
+      .hamburgerMenu {
+        display: block;
+
+        width: 30px;
+        height: 25px;
+        position: relative;
+        cursor: pointer;
+
+        div {
+          position: absolute;
+          width: 100%;
+          height: 4px;
+          background-color: var(--second-color);
+          border-radius: 2px;
+          transition: all 0.3s ease-in-out;
+
+          &:nth-child(1) {
+            top: 0;
+          }
+
+          &:nth-child(2) {
+            top: 10px;
+          }
+
+          &:nth-child(3) {
+            top: 20px;
+          }
+        }
+
+        &.open div {
+          &:nth-child(1) {
+            transform: rotate(45deg);
+            top: 10px;
+          }
+
+          &:nth-child(2) {
+            opacity: 0;
+          }
+
+          &:nth-child(3) {
+            transform: rotate(-45deg);
+            top: 10px;
+          }
+        }
+      }
+    }
+}
 }

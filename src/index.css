@@ -14,10 +14,13 @@
   --second-color: white;
   --subsecond-color: black;
   --tri-color: #ed1b76;
-  --subtri-color: #f44786	;
+  --subtri-color: #f44786;
 }
-* {box-sizing: border-box;
-  -moz-box-sizing: border-box; box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 html {
   height: 100%;
 }
@@ -29,6 +32,14 @@ body {
   padding: 0;
   display: flex;
   place-items: center;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+
+    scrollbar-width: none;
+
+    -ms-overflow-style: none;
+  }
 }
 
 div#root {
@@ -36,11 +47,9 @@ div#root {
 }
 
 ::selection {
-  background-color: var(--tri-color); 
+  background-color: var(--tri-color);
 }
 
 ::-moz-selection {
-  background-color: var(--tri-color); 
+  background-color: var(--tri-color);
 }
-
-
