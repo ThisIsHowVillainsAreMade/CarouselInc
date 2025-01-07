@@ -1,66 +1,82 @@
+
 .navbarSection {
-    // position: fixed;
-    // position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  color: var(--second-color);
 
-    top: 0;
-    width: 100%;
-    background-color: var(--primary-color);
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    color: var(--second-color);
-  
-    .navbarContainer {
+  .navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+    .logoSection {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      padding: 10px 20px;
+      gap: 2rem;
 
-      .logoSection { display: flex;
-    gap: 2rem;}
-  
       .logo {
         display: flex;
         align-items: center;
-  
-        img {
+
+        img.spinningLogo {
           height: 50px;
           width: auto;
           object-fit: contain;
+          animation: spinLogo 5s linear infinite, shadowPulse 2s ease-in-out infinite;
         }
       }
-  
-      .navbarMenu {
-        list-style-type: none;
-        display: flex;
-        gap: 20px;
-  
-        li a {
-          text-decoration: none;
-          color: var(--second-color);
-          font-size: 16px; 
-          font-weight: normal; 
-          line-height: 1; 
-          display: inline-block; 
-          transition: transform 0.15s ease-in-out, color 0.15s ease-in-out;
-  
-          &:hover {
-            color: var(--tri-color); 
-            transform: scale(1.2); 
-          }
+
+      p {
+        font-size: 1.2rem;
+        color: var(--second-color);
+        font-weight: bold;
+      }
+    }
+
+    .navbarMenu {
+      list-style-type: none;
+      display: flex;
+      gap: 20px;
+
+      li a {
+        text-decoration: none;
+        color: var(--second-color);
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 1;
+        display: inline-block;
+        transition: transform 0.15s ease-in-out, color 0.15s ease-in-out;
+
+        &:hover {
+          color: var(--tri-color);
+          transform: scale(1.2);
         }
       }
     }
   }
-  
-  @media screen and (max-width: 768px) {
-    .navbarContainer {
-      flex-direction: column;
-  
-      .navbarMenu {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-      }
-    }
+}
+
+@keyframes spinLogo {
+  from {
+    transform: rotate(0deg);
   }
-  
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shadowPulse {
+  from {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  }
+  to {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+}
