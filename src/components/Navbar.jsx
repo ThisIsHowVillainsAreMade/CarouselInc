@@ -13,7 +13,7 @@ export default function Navbar() {
     <nav className="navbarSection">
       <section className="navbarContainer">
         <div className="logoSection">
-          <a href="/" className="logo">
+          <a href="#" className="logo">
             <img src={logo} alt="Logo" className="spinningLogo" />
           </a>
           <p>C A R O U S E L</p>
@@ -30,13 +30,13 @@ export default function Navbar() {
 
         <ul className={`navbarMenu ${isMenuOpen ? "open" : ""}`}>
           <li>
-            <a href="#home">Accueil</a>
+            <a href="#accueil">Accueil</a>
           </li>
           <li>
-            <a href="#about">À propos</a>
+            <a href="#concept">Concept</a>
           </li>
           <li>
-            <a href="#contact">Mentions légales</a>
+            <a href="#legal">Mentions légales</a>
           </li>
         </ul>
       </section>

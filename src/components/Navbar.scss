@@ -17,11 +17,12 @@
       align-items: center;
       gap: 2rem;
 
+
       .logo img.spinningLogo {
         height: 50px;
         width: auto;
         object-fit: contain;
-        animation: spinLogo 5s linear infinite, shadowPulse 2s ease-in-out infinite;
+        animation: spinLogo 5s linear infinite; //, shadowPulse 2s ease-in-out infinite;
       }
 
       @keyframes spinLogo {
@@ -33,17 +34,17 @@
         }
       }
       
-      @keyframes shadowPulse {
-        0% {
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-        }
-        50% {
-          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-        }
-        100% {
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-        }
-      }
+      // @keyframes shadowPulse {
+      //   0% {
+      //     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+      //   }
+      //   50% {
+      //     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+      //   }
+      //   100% {
+      //     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+      //   }
+      // }
       
       .spinningLogo {
         animation: spinLogo 3s linear infinite, shadowPulse 2s ease-in-out infinite;

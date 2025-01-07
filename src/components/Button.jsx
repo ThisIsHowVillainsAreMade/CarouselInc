@@ -13,7 +13,7 @@ export default function Button() {
       
   
     return (
-      <div className="buttonContainer">
+      <div className="buttonContainer" id="concept">
         <button className="button type1" onClick={onClickMailtoHandler}>
         </button>
       </div>

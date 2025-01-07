@@ -4,7 +4,7 @@ import GameMaster from "../assets/images/game_master_black_mask_dangerous__7cj9m
 export default function Welcome() {
   return (
     <section className="welcomeSection">
-      <h1>C A R O U S E L</h1>
+      <h1 id="accueil">C A R O U S E L</h1>
       <h2>Osez le jeu de votre vie !</h2>
       <h3>Tentez de remporter 1 million d&apos;euros !</h3>
       <img src={GameMaster} alt="Maître du Jeu" />

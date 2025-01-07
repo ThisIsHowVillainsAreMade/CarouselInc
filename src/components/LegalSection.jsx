@@ -26,7 +26,7 @@ export default function Legal() {
   }, []);
 
   return (
-    <section
+    <section id="legal"
       ref={sectionRef}
       className={`legalSection ${isExpanded ? "expanded" : "collapsed"}`}
     >
