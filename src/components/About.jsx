@@ -32,7 +32,7 @@ export default function About() {
         <h3>Oserez-vous relever le défi ultime ?</h3>
         <p>
           <strong>Le Jeu du Carousel</strong> est une expérience hors du commun où seuls les plus audacieux pourront prétendre à la récompense ultime :{" "}
-          <strong>1 million d&apos;euros</strong>.
+          <strong>30 millions d&apos;euros</strong>.
           <br />
           <br />
           Dans ce jeu, chaque épreuve mettra à l&apos;épreuve votre intelligence, votre courage et votre capacité à survivre face aux défis les plus extrêmes.

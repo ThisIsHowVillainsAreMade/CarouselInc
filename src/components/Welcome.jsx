@@ -51,7 +51,7 @@ export default function Welcome() {
     <section className={`welcomeSection ${isVisible ? "visible" : "hidden"}`}>
       <h1 id="accueil">C A R O U S E L</h1>
       <h2>Osez le jeu de votre vie !</h2>
-      <h3>Tentez de remporter 1 million d&apos;euros !</h3>
+      <h3>Tentez de remporter 30 millions d&apos;euros !</h3>
       <img
         src={GameMaster}
         alt="Maître du Jeu"

@@ -48,7 +48,7 @@ export default function Legal() {
           <li>Le Jeu du Carousel est un concours basé sur des épreuves physiques, mentales et stratégiques.</li>
           <li>Chaque participant accepte que l&apos;élimination d&apos;une épreuve entraîne son exclusion immédiate du jeu.</li>
           <li>L&apos;exclusion des jeux, tout comme l&apos;élimination des jeux entraîne le décès du joueur sans délais.</li>
-          <li>La récompense finale s&apos;élève à <strong>1 000 000 €</strong>, attribuée au dernier participant encore en lice.</li>
+          <li>La récompense finale s&apos;élève à <strong>30 000 000 €</strong>, attribuée au dernier participant encore en lice.</li>
           <li>Les règles spécifiques de chaque épreuve seront communiquées avant leur début.</li>
         </ul>
 
