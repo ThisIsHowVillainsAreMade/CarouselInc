@@ -35,7 +35,12 @@ div#root {
   width: -webkit-fill-available;
 }
 
-
-footer {
-  bottom: 0;
+::selection {
+  background-color: var(--tri-color); 
 }
+
+::-moz-selection {
+  background-color: var(--tri-color); 
+}
+
+
