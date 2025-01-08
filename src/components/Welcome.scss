@@ -19,19 +19,19 @@
   
     h1 {
       font-size: 2.5rem;
-      transition: letter-spacing 0.3s ease-in-out;
-      letter-spacing: 0.2rem;
+      // transition: letter-spacing 0.3s ease-in-out;
+      // letter-spacing: 0.2rem;
   
-      &::selection {
-        color: var(--primary-color);
-        background-color: var(--tri-color);
-      }
+      // &::selection {
+      //   color: var(--primary-color);
+      //   background-color: var(--tri-color);
+      // }
   
-      &:hover {
-        letter-spacing: 0.25rem;
-        color: var(--tri-color);
-        transition: letter-spacing 500ms ease-in-out, color 500ms ease-in-out;
-      }
+      // &:hover {
+      //   letter-spacing: 0.25rem;
+      //   color: var(--tri-color);
+      //   transition: letter-spacing 500ms ease-in-out, color 500ms ease-in-out;
+      // }
     }
   
     h2 {

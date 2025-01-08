@@ -59,6 +59,7 @@
     }
 
     .navbarMenu {
+      z-index: 1001;
       list-style-type: none;
       display: flex;
       gap: 20px;
