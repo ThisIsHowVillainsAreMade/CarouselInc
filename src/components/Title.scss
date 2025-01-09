@@ -17,15 +17,15 @@
   .title {
     z-index: 3;
     color: white;
-    position: absolute; /* Nécessaire pour utiliser translate */
-    top: 50%; /* Centre vertical */
-    left: 50%; /* Centre horizontal */
-    transform: translate(-50%, -50%); /* Ajuste le centrage parfait */
-    font-size: 3rem; /* Taille du texte */
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem; 
     text-shadow: 
       0 0 5px black, 
       0 0 10px black, 
-      0 0 30px white; /* Ajoute un effet lumineux */
+      0 0 30px white; 
   }
   
   .line {
